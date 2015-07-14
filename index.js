@@ -49,9 +49,12 @@ var math = module.exports = {
     },
 
 
-
-    random: function(min, max) {
-        return (max === undefined) ? Math.random() * min : Math.random() * (max - min) + min
+    /*
+     * Returns a pseudo-random floating point number within the range a->b, if b is not supplied it
+     * returns within the range 0-a
+    */
+    random: function(a, b) {
+        return (b === undefined) ? Math.random() * a : Math.random() * (b - a) + a
     }
 
 
