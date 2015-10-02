@@ -55,7 +55,7 @@ var math = module.exports = {
     */
     random: function(a, b) {
         return (b === undefined) ? Math.random() * a : Math.random() * (b - a) + a
-    }
+    },
 
 
     /*
@@ -64,7 +64,7 @@ var math = module.exports = {
      */
     max: function( a, b ){
         return Math.max( a, b )
-    }
+    },
 
 
     /*
